@@ -1,17 +1,17 @@
 const urlDecode = function(text) {
   // Put your solution here
   text = text.replace(/%20/g, " ");
-  console.log(text);
   text = text.split("&");
-  console.log(text);
   text.forEach((pair, index) => {
-    console.log("in for loop");
-    pair[index] = pair[index].split("=");
+    text[index] = text[index].split("=");
   });
-  console.log(text);
 
-  console.log("final value of text: " + text);
-  return text;
+  let textObj = {};
+  text.forEach((pairArr, index) => {
+    textObj[pairArr[0]] = text[index][1];
+  });
+
+  return textObj;
 };
 
 console.log(urlDecode("duck=rubber"));
