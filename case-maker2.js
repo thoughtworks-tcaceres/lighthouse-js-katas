@@ -4,7 +4,7 @@ const makeCase = function(input, styles) {
     styles = [styles];
   }
 
-  //tier1*****
+  //tier1**********
   //camel
   const camel = function(input) {
     input = input
@@ -54,7 +54,7 @@ const makeCase = function(input, styles) {
     return input;
   };
 
-  //tier2*****
+  //tier2**********
   //vowel
   const vowel = function(input) {
     for (var i = 0; i < input.length; i++) {
@@ -89,7 +89,7 @@ const makeCase = function(input, styles) {
     return input;
   };
 
-  //tier3*****
+  //tier3**********
   //upper
   const upper = function(input) {
     input = input.toUpperCase();
